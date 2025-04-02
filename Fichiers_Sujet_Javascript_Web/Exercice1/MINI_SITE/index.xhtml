@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Un mini site exemple</title>
+		<meta http-equiv="content-type" content="application/xhtml+xml;
+					       charset=UTF-8"/>
+		<script src="Script/JavaScript/interaction.js"></script>
+		<link rel="stylesheet" type="text/css" media="screen" title="defaultstyle"
+					href="Style/style.css"/>
+	</head>
+	<body onload="displayHour()">
+
+		<div>
+			<input id="date" type="text" value="" size="30"/><br/>
+			<img src="./Images/logo-final-sfa.jpg" alt="Logo de la faculté
+      de sciences de Poitiers" onclick="setWidth(this)" title="click me"/>
+
+			<!-- Lorsqu'on appelle une fonction javascript avec le paramètre
+			this, celui-ci représente l'objet sur lequel est branchée la
+			fonction. Dans l'exemple ci-dessus, le "this" fait référence à
+			l'objet javascript représentant l'élément <img /> -->
+		</div>
+
+		<h1 onmouseover="setColor(this, 'maroon');"
+				onmouseout="unsetColor(this);"> Voici un site sans style </h1>
+
+		<p>
+			Une liste de sites que vous pouvez consulter se
+			trouve <a href="#liste" onclick="highlightList()"> plus bas sur
+			la page </a>
+		</p>
+
+		<p>
+			La première page du site se
+			trouve <a href="Content/page1.xhtml"> ici </a>
+		</p>
+
+		<p>
+			Si vous voulez m'envoyer un email,
+			cliquez <a href="mailto:sylvie.alayrangues@univ-poitiers.fr">
+			ici </a>
+		</p>
+
+		<div id="liste"> Sites que vous pouvez consulter :
+
+			<ul>
+				<li>
+					<a href="http://www.univ-poitiers.fr"> Université de
+						Poitiers </a>
+				</li>
+				<li>
+					<a href="http://www.societe-informatique-de-france.fr">
+						Société informatique de France
+						<img src="Images/LogoSIF.png"
+								 alt="logo société informatique de France"/>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

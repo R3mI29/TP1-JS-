@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <title></title>
+    <meta http-equiv="content-type"
+          content="application/xhtml+xml; charset=UTF-8"/>
+    <script type="text/javascript" defer="defer"
+            src="Script/JavaScript/test.js"></script>
+    <script type="text/javascript" defer="defer"
+            src="Script/JavaScript/calculatrice.js"></script>
+  </head>
+  <body>
+
+    <table>
+      <tr>
+        <td colspan="3"><input id="res" name="res" type="text"  value=""/></td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="addtext(this.textContent)">1</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)">2</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)">3</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="addtext(this.textContent)">4</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)">5</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)">6</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="addtext(this.textContent)">7</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)">8</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)">9</button>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button onclick="addtext(this.textContent)">0</button>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="addtext(this.textContent)"> +</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)"> *</button>
+        </td>
+        <td>
+          <button id="egal" onclick="giveresult()"> =</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="addtext(this.textContent)"> -</button>
+        </td>
+        <td>
+          <button onclick="addtext(this.textContent)"> /</button>
+        </td>
+        <td>
+          <button id="C" onclick="ereaseText()"> C</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button id="blueclick" onclick="updateColorButton(this.textContent)"> Blue</button>
+        </td>
+        <td>
+          <button id="redclick" onclick="updateColorButton(this.textContent)"> Black</button>
+        </td>
+        <td>
+          <button id="greenclick" onclick="updateColorButton(this.textContent)"> Red</button>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
